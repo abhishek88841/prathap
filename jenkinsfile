@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout code from Git repository
-git branch: 'main', credentialsId: 'use this id for proper use', url: 'https://github.com/abhishek88841/prathap.git'
+git branch: 'main', credentialsId: 'gitid', url: 'https://github.com/abhishek88841/prathap.git'
                 git 'https://github.com/abhishek88841/prathap.git'
             }
         }
