@@ -1,1 +1,19 @@
+pipeline {
+    agent any
+    
+    stages {
+        stage('Checkout') {
+            steps {
+                // Checkout code from Git repository
+                git 'https://github.com/abhishek88841/prathap.git'
+            }
+        }
+        stage('Build') {
+            steps {
+                // Build your code
+                sh 'ls -lrt'
+            }
+        
 
+	}
+	}
